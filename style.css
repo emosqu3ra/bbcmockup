@@ -26,15 +26,20 @@ nav form select {
     width: 100%;
 }
 
-main + section > section {
-    width: 33.3333%;
-    float: left;
-}
+/* MAIN SECTION */
 
 main > section {
     width: 50%;
     height: 500px;
     float: left;
+}
+
+  /* MAIN SUB SECTION */
+main section + section section {
+    width: 47%;
+    height: 250px;
+    float: left;
+    margin: 10px;
 }
 
 /* Container holding the image and the text */
@@ -45,20 +50,29 @@ main > section {
   }
   
   /* Bottom left text */
-  .bottom-left {
+.bottom-left {
     position: absolute;
     bottom: 8px;
     left: 16px;
   }
 
-  .bottom-left h1 {
-      margin-bottom: 45px;
-      text-align: left;
-  }
+.bottom-left h1, h3 {
+    margin-bottom: 45px;
+    text-align: left;
+  } 
 
-main section + section section {
-    width: 50%;
-    height: 250px;
+/* NEWS SECTION */
+main + section > section {
+    width: 32%;
     float: left;
+    margin-left: 10px;
+
 }
 
+.news {
+    width: 100%;
+}
+
+.trump {
+    margin-right: 10px;
+}
