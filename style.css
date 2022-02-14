@@ -8,7 +8,7 @@ body, html {
 header {
     background-color: black;
     height: 55px;
-    colorr: white;
+    color: white;
 }
 
 nav *{
@@ -26,20 +26,29 @@ nav form select {
     width: 100%;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 /* MAIN SECTION */
 
 main > section {
-    width: 50%;
+    width: 49.5%;
     height: 500px;
     float: left;
+    margin-left: 5px;
 }
 
   /* MAIN SUB SECTION */
 main section + section section {
-    width: 47%;
-    height: 250px;
+    width: 49%;
+    height: 196px;
     float: left;
-    margin: 10px;
+    margin-left: 5px;
+}
+
+.article {
+    margin-bottom: 7px;
 }
 
 /* Container holding the image and the text */
@@ -54,19 +63,27 @@ main section + section section {
     position: absolute;
     bottom: 8px;
     left: 16px;
+    letter-spacing: 1px;
   }
+
 
 .bottom-left h1, h3 {
     margin-bottom: 45px;
     text-align: left;
   } 
+  
 
 /* NEWS SECTION */
+
+section h2, main h2, h4 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
 main + section > section {
     width: 32%;
     float: left;
     margin-left: 10px;
-
 }
 
 .news {
